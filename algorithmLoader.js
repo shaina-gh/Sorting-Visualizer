@@ -37,6 +37,11 @@ async function fetchAlgorithmList() {
         'combSort.js',
         'pancakeSort.js',
         'stoogeSort.js',
-        'bitonicSort.js'
+        'bitonicSort.js',
+        'oddEvenSort.js',
+        'timSort.js',
+        'pigeonholeSort.js',
+        'beadSort.js',
+        'bucketSort.js'
     ];
 }
