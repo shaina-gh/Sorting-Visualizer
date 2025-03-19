@@ -32,6 +32,11 @@ async function fetchAlgorithmList() {
         'radixSort.js',
         'cocktailShakerSort.js',
         'gnomeSort.js',
-        'bogoSort.js'
+        'bogoSort.js',
+        'cycleSort.js',
+        'combSort.js',
+        'pancakeSort.js',
+        'stoogeSort.js',
+        'bitonicSort.js'
     ];
 }
