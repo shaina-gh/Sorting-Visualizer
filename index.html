@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSort - Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="site-data/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="site-data/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="site-data/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="site-data/favicon-16x16.png">
+    <link rel="manifest" href="site-data/site.webmanifest">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>WebSort</h1>
+        <p>Sorting Algorithm Visualizer</p>
+      </header>
+      <div class="controls">
+        <div class="control-group">
+          <label for="algorithm">Algorithm:</label>
+          <select id="algorithm"></select>
+        </div>
+        <div class="control-group">
+          <label for="array-size">Array Size:</label>
+          <input type="range" id="array-size" min="10" max="1000" value="50">
+          <span id="size-value">100</span>
+        </div>
+        <div class="control-group">
+          <label for="sort-speed">Speed:</label>
+          <input type="range" id="sort-speed" min="1" max="1000" value="500">
+          <span id="speed-value">500</span>
+        </div>
+        <div class="control-group buttons">
+          <button id="generate">Generate New Array</button>
+          <button id="sort">Sort!</button>
+          <button id="pause" disabled>Pause</button>
+          <button id="resume" disabled>Resume</button>
+          <button id="reset">Reset</button>
+          <button id="mute">Mute Sound</button>
+        </div>
+      </div>
+      <div class="visualization-container">
+        <div id="array-container"></div>
+      </div>
+      <div class="info-container">
+        <div class="algorithm-info">
+          <h3>Algorithm Information</h3>
+          <div id="algorithm-description"></div>
+          <div class="complexity">
+            <p>Time Complexity: <span id="time-complexity">-</span>
+            </p>
+            <p>Space Complexity: <span id="space-complexity">-</span>
+            </p>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span>Comparisons:</span>
+            <span id="comparisons">0</span>
+          </div>
+          <div class="stat">
+            <span>Swaps:</span>
+            <span id="swaps">0</span>
+          </div>
+          <div class="stat">
+            <span>Time Elapsed:</span>
+            <span id="time-elapsed">0.00s</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>WebSort - A sorting algorithm visualization tool</p>
+    </footer>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
