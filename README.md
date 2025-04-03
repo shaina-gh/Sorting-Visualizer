@@ -26,4 +26,4 @@ A **Sorting Algorithm Visualizer** built with HTML, CSS, and JavaScript. This pr
 
 ## 🎯 Demo  
 Check it out on **Netlify** (if deployed):  
-👉 [Live Demo](https://sortingvisualizer-shaina.netlify.app) (replace with your Netlify URL)
+👉 [Live Demo](https://sortingvisualizer-shaina.netlify.app) 
